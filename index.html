@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <title>Portofolio</title>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg custom-navbar bg-navbar-dark sticky-top" data-aos="fade-down">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">7arzzVerse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container rounded text-center py-4" data-aos="zoom-in-up">
+<h1 class="display-4 mb-2" data-aos="fade-up" data-aos-delay="100">Andaru Ilham Amerta</h1>
+<h5 class="text-muted mb-3" data-aos="fade-up" data-aos-delay="150">
+</h5>
+      <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+        <img class="img-profil" src="7arzz.jpg" alt="profil" data-aos="flip-left" data-aos-delay="200">
+        <p class="lead mb-0" data-aos="fade-left" data-aos-delay="300"> I'm a <span id="dynamic-text"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="about">
+    <div class="container" data-aos="fade-right">
+      <h1 class="display-4">About Me</h1>
+      <p class="lead">Progres selama menjadi Web Developer</p>
+
+      <div class="progress mb-3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" data-aos="fade-left">
+        <div class="progress-bar bg-danger" style="width: 70%">HTML</div>
+      </div>
+      <div class="progress mb-3" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" data-aos="fade-left" data-aos-delay="100">
+        <div class="progress-bar" style="width: 55%">CSS</div>
+      </div>
+      <div class="progress" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" data-aos="fade-left" data-aos-delay="200">
+        <div class="progress-bar bg-warning" style="width: 30%">JS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container my-5" data-aos="fade-up">
+      <h1 class="display-4 text-center mb-4">My Projects</h1>
+      <div class="row g-4">
+
+        <!-- Project 1: Cerpen -->
+        <div class="col-md-6" data-aos="zoom-in">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Website Cerpen</h5>
+              <p class="card-text">Sebuah website berisi kumpulan cerpen karya pribadi. Dibuat dengan HTML, CSS, dan Bootstrap. Tampilan sederhana tapi menarik.</p>
+              <a href="https://7arzz.github.io/Cerpen/" class="btn btn-primary" target="_blank">Lihat Proyek</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Cafe Menu -->
+        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Menu Cafe Digital</h5>
+              <p class="card-text">Website menu digital untuk cafe mini, menggunakan konsep UI flip card yang unik. Cocok buat tugas praktik atau bisnis kecil.</p>
+              <a href="https://7arzz.github.io/Cafe/" class="btn btn-primary" target="_blank">Lihat Proyek</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+<section id="contact">
+  <div class="container my-5" data-aos="fade-up">
+    <h1 class="display-4 text-center mb-4">Contact Me</h1>
+    <p class="lead text-center mb-4">Ingin kerja sama atau ngobrol santai? Langsung aja hubungi aku lewat:</p>
+    
+    <div class="d-flex justify-content-center gap-4">
+      <a href="https://instagram.com/7arz_z" target="_blank" class="btn btn-outline-danger">
+        <i class="bi bi-instagram"></i> Instagram
+      </a>
+      <a href="mailto:7arzz404@gmail.com" class="btn btn-outline-primary">
+        <i class="bi bi-envelope-fill"></i> Email
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4 mt-5" data-aos="fade-in">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Tarzz. All rights reserved.</p>
+      <p class="mb-0">
+        Dibuat dengan ❤️ pakai <a href="https://getbootstrap.com/" class="text-warning text-decoration-none" target="_blank">Niat</a> dan semangat belajar.
+      </p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+  <script>
+  window.addEventListener('load', () => {
+    console.log('Page loaded. Footer should be visible.');
+  });
+</script>
+</body>
+</html>
