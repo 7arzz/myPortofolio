@@ -84,6 +84,34 @@ a .navbar-link{
   margin-bottom: 40px;
 }
 
+/* progress */
+#progress {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* galaksi vibes */
+  padding: 60px 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  margin-top: 80px;
+}
+
+#progress h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px #00ffff;
+}
+
+#progress .lead {
+  text-align: center;
+  color: #aad7ff;
+  margin-bottom: 40px;
+}
+
+#progress .sub {
+  text-align: justify;
+  color: #aad7ff;
+  margin-bottom: 40px;
+}
+
 .progress {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
@@ -215,4 +243,8 @@ a .navbar-link{
   background: linear-gradient(to right, #0ff, #00e1ff);
   box-shadow: 0 0 12px #00e1ff;
   letter-spacing: 1px;
+}
+
+#hero,#about,#projects,#contact{
+  margin-top: 8rem;
 }
