@@ -1,43 +1,80 @@
+/* 🌌 Global Style */
 body {
-  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a); /* contoh gradasi */
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Arial, sans-serif;
 }
 
-
-/* navbar */
-.navbar{
-  position: sticky;!important
+/* Navbar */
+.navbar {
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1030;
 }
 
-.custom-navbar{
+.custom-navbar {
   background: linear-gradient(155deg, #0f0c29, #302b63, #24243e);
 }
-.navbar-brand, .navbar-nav{
-  color: white;
-  text-shadow:
-    0 0 5px #fff,
-    0 0 10px #00f,
-    0 0 20px #0ff,
-    0 0 40px #0ff;
-}
-a .navbar-link{
-  background-color: white;
+
+.navbar-brand {
+  color: #efefef;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #59c8d6, 0 0 20px #59c8d6;
+  transition: all 0.4s ease-in-out;
 }
 
-/* hero */
+.navbar-brand:hover {
+  transform: scale(1.2);
+  color: #7360e4 !important;
+  text-shadow: 0 0 8px #240f80, 0 0 15px #160757, 0 0 25px #3b1c5e;
+}
 
+.navbar-nav .nav-link {
+  color: white !important;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.2);
+  color: #00ffff !important;
+  text-shadow: 0 0 5px #00ffff, 0 0 15px #00ffff, 0 0 25px #00ffff;
+}
+
+/* Hero */
 #hero {
   background: linear-gradient(135deg, #1a002b, #000022, #002244);
   padding: 100px 0;
   border-radius: 20px;
   color: #fff;
-  text-shadow: 0 0 6px #00ffff;
-  margin-top: 10px;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+#hero h1 {
+  text-shadow: 0 0 8px #00ffff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+  }
+  to {
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  }
+}
+
+span {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+  display: inline-block;
+  width: 110px;
 }
 
 .img-profil {
@@ -46,7 +83,6 @@ a .navbar-link{
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 0 10px #00ffff;
-  
 }
 
 #dynamic-text {
@@ -54,22 +90,20 @@ a .navbar-link{
   min-width: 110px;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-  display: inline-block;
 }
 
 .fade {
   opacity: 0;
 }
 
-
-/* About Me */
+/* About */
 #about {
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* galaksi vibes */
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   padding: 60px 20px;
   border-radius: 20px;
   color: #ffffff;
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
-  margin-top: 50px;
+  margin-top: 8rem;
 }
 
 #about h1 {
@@ -79,29 +113,28 @@ a .navbar-link{
 }
 
 #about .lead {
-  text-align: center;
+  text-align: justify;
   color: #aad7ff;
   margin-bottom: 40px;
 }
 
-/* progress */
+/* Progress */
 #progress {
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* galaksi vibes */
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   padding: 60px 20px;
   border-radius: 20px;
   color: #ffffff;
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
-  margin-top: 80px;
+  margin-top: 8rem;
+  text-align: center;
 }
 
 #progress h1 {
-  text-align: center;
   margin-bottom: 20px;
   text-shadow: 2px 2px 10px #00ffff;
 }
 
 #progress .lead {
-  text-align: center;
   color: #aad7ff;
   margin-bottom: 40px;
 }
@@ -128,7 +161,7 @@ a .navbar-link{
   transition: width 1s ease-in-out;
 }
 
-/* Kasih warna futuristik */
+/* Warna Futuristik */
 .progress-bar.bg-danger {
   background: linear-gradient(to right, #ff416c, #ff4b2b);
 }
@@ -142,11 +175,10 @@ a .navbar-link{
   color: #fff;
 }
 
-
-/* projects */
+/* Projects */
 #projects {
-  margin-top: 50px;
-  background: linear-gradient(135deg, #1b1b2f, #16213e); /* tema galaxy gelap */
+  margin-top: 8rem;
+  background: linear-gradient(135deg, #1b1b2f, #16213e);
   padding: 60px 20px;
   color: #fff;
   border-radius: 20px;
@@ -161,8 +193,8 @@ a .navbar-link{
   background: rgba(255, 255, 255, 0.05);
   border: none;
   border-radius: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   backdrop-filter: blur(5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -185,21 +217,23 @@ a .navbar-link{
   border-top-right-radius: 15px;
 }
 
+/* Button */
 .btn-primary {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   border: none;
-  transition: 0.3s ease;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
   background: linear-gradient(to right, #00c6ff, #0072ff);
-  box-shadow: 0 0 10px #00e1ff;
+  box-shadow: 0 0 12px #00e1ff;
+  letter-spacing: 1px;
 }
 
-
-/* contact */
+/* Contact */
 #contact {
-  margin-top: 50px;
+  margin-top: 8rem;
   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   padding: 80px 20px;
   color: #fff;
@@ -208,8 +242,8 @@ a .navbar-link{
 }
 
 #contact h1 {
-  text-shadow: 2px 2px 10px #00e1ff;
   color: #00e1ff;
+  text-shadow: 2px 2px 10px #00e1ff;
 }
 
 .form-control {
@@ -218,7 +252,7 @@ a .navbar-link{
   color: #fff;
   border-radius: 10px;
   box-shadow: none;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .form-control::placeholder {
@@ -230,21 +264,4 @@ a .navbar-link{
   color: #fff;
   border-color: #00f7ff;
   box-shadow: 0 0 8px #00f7ff;
-}
-
-.btn-primary {
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  border: none;
-  transition: 0.3s ease;
-  font-weight: bold;
-}
-
-.btn-primary:hover {
-  background: linear-gradient(to right, #0ff, #00e1ff);
-  box-shadow: 0 0 12px #00e1ff;
-  letter-spacing: 1px;
-}
-
-#hero,#about,#projects,#contact{
-  margin-top: 8rem;
 }
